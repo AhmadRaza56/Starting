@@ -26,7 +26,20 @@ namespace Starting
                 string windows = Console.ReadLine();
                 if (windows == "yes")
                 {
-
+                    int i = 0;
+                    Console.WriteLine("How many windows do you have?");
+                    int windowsize = int.Parse(Console.ReadLine());
+                    //loop to make sure all windows are calculated
+                    while (i <= windowsize)
+                    {
+                        Console.WriteLine("please enter the width of the wall in foot");
+                        double widthWindow = int.Parse(Console.ReadLine());
+                        Console.WriteLine("please enter the height of the wall foot");
+                        double heightWindow = int.Parse(Console.ReadLine());
+                        double totalWindow = heightWindow * widthWindow;
+                        Console.WriteLine("The total area of the wall is " + totalWindow + "ft^2");
+                        ++i;
+                    }
                 }
 
                 //calculate the amount of paint needed in total
