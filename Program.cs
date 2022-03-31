@@ -10,6 +10,7 @@ namespace Starting
 
             while (repeat)
             {
+                //calculation of wall area
                 Console.WriteLine("please enter the width of the wall in meters");
                 double width = int.Parse(Console.ReadLine());
                 Console.WriteLine("please enter the height of the wall meters");
@@ -18,15 +19,20 @@ namespace Starting
                 Console.WriteLine("The total area of the wall is " + total + "m^2");
                 Console.WriteLine("1 litre of pain covers approx 12m^2");
                 Console.ReadLine();
+
+                //calculate the amount of paint needed in total
                 double paintNeeded = Math.Round(total / 12);
                 Console.WriteLine("You will need " + paintNeeded + " litres of paint");
                 Console.ReadLine();                
+
+                //shows amount of paint needed accordingly
                 Console.WriteLine("You will need " + paintNeeded + " of the small size or " + (paintNeeded / 5) + " of medium size or " + (paintNeeded / 10) + " of large size can");
                 Console.WriteLine("The cost for a small size will range from £8-£20, medium will range from £10-25 and a large will cost £15-30.");
                 Console.ReadLine();
                 Console.WriteLine("What size paint would you like? small for 1 litre, medium for 5 litre or large for 10 litre");
                 string size = Console.ReadLine();
 
+                //if statement for calc of size and total costs
                 if (size == "small" || size == "1")
                 {
                     Console.WriteLine("Would you like the £8 single coat, the £10 double coat or the £20 Finish?");
@@ -93,6 +99,7 @@ namespace Starting
                     }
                     Console.ReadLine();
                 }
+                //to have code repeat
                 Console.WriteLine("Would you like to reuse the paint calculator?");
                 string repeating = Console.ReadLine();
                 if (repeating == "yes")
