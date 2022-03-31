@@ -17,8 +17,10 @@ namespace Starting
                 double total = height * width;
                 Console.WriteLine("The total area of the wall is " + total + "m^2");
                 Console.WriteLine("1 litre of pain covers approx 12m^2");
+                Console.ReadLine();
                 double paintNeeded = Math.Round(total / 12);
                 Console.WriteLine("You will need " + paintNeeded + " litres of paint");
+                Console.ReadLine();
                 Console.WriteLine("You will need " + paintNeeded + " of the small size or " + (paintNeeded / 5) + " of medium size or " + (paintNeeded / 10) + " of large size can");
                 Console.WriteLine("What size paint would you like? small for 1 litre, medium for 5 litre or large for 10 litre");
                 string size = Console.ReadLine();
