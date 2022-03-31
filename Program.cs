@@ -20,8 +20,10 @@ namespace Starting
                 Console.ReadLine();
                 double paintNeeded = Math.Round(total / 12);
                 Console.WriteLine("You will need " + paintNeeded + " litres of paint");
-                Console.ReadLine();
+                Console.ReadLine();                
                 Console.WriteLine("You will need " + paintNeeded + " of the small size or " + (paintNeeded / 5) + " of medium size or " + (paintNeeded / 10) + " of large size can");
+                Console.WriteLine("The cost for a small size will range from £8-£20, medium will range from £10-25 and a large will cost £15-30.");
+                Console.ReadLine();
                 Console.WriteLine("What size paint would you like? small for 1 litre, medium for 5 litre or large for 10 litre");
                 string size = Console.ReadLine();
 
