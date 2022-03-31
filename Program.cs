@@ -11,20 +11,28 @@ namespace Starting
             while (repeat)
             {
                 //calculation of wall area
-                Console.WriteLine("please enter the width of the wall in meters");
+                Console.WriteLine("please enter the width of the wall in foot");
                 double width = int.Parse(Console.ReadLine());
-                Console.WriteLine("please enter the height of the wall meters");
+                Console.WriteLine("please enter the height of the wall foot");
                 double height = int.Parse(Console.ReadLine());
                 double total = height * width;
-                Console.WriteLine("The total area of the wall is " + total + "m^2");
-                Console.WriteLine("1 litre of pain covers approx 12m^2");
+                Console.WriteLine("The total area of the wall is " + total + "ft^2");
+                Console.WriteLine("1 litre of pain covers approx 20ft^2");
                 Console.ReadLine();
 
-                //calculate the amount of paint needed in total
-                double paintNeeded = Math.Round(total / 12);
-                Console.WriteLine("You will need " + paintNeeded + " litres of paint");
-                Console.ReadLine();                
+                //calculations for having windows + doors                
+                string doors;
+                Console.WriteLine("Do you have windows on the wall?");
+                string windows = Console.ReadLine();
+                if (windows == "yes")
+                {
 
+                }
+
+                //calculate the amount of paint needed in total
+                double paintNeeded = Math.Round(total / 20);
+                Console.WriteLine("You will need " + paintNeeded + " litres of paint");
+                Console.ReadLine();
                 //shows amount of paint needed accordingly
                 Console.WriteLine("You will need " + paintNeeded + " of the small size or " + (paintNeeded / 5) + " of medium size or " + (paintNeeded / 10) + " of large size can");
                 Console.WriteLine("The cost for a small size will range from £8-£20, medium will range from £10-25 and a large will cost £15-30.");
