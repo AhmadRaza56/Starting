@@ -48,23 +48,44 @@ namespace Starting
 
                 switch (price)
                 {
-                    case 8:
+                    case 10:
                         double cost = paintNeeded * 10;
                         Console.WriteLine("price is £" + cost);
                         break;
-                    case 10:
+                    case 15:
                         double cost2 = paintNeeded * 15;
                         Console.WriteLine("price is £" + cost2);
                         break;
-                    case 20:
+                    case 25:
                         double cost3 = paintNeeded * 25;
                         Console.WriteLine("price is £" + cost3);
                         break;
                 }
                 Console.ReadLine();
             }
+            else if (size == "large")
+            {
+                Console.WriteLine("Would you like the £15 single coat, the £20 double coat or the £30 Finish?");
+                int price = int.Parse(Console.ReadLine());
 
-            
+                switch (price)
+                {
+                    case 15:
+                        double cost = paintNeeded * 15;
+                        Console.WriteLine("price is £" + cost);
+                        break;
+                    case 20:
+                        double cost2 = paintNeeded * 20;
+                        Console.WriteLine("price is £" + cost2);
+                        break;
+                    case 30:
+                        double cost3 = paintNeeded * 30;
+                        Console.WriteLine("price is £" + cost3);
+                        break;
+                }
+                Console.ReadLine();
+            }
+
         }
     }
 }
