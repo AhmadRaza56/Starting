@@ -51,7 +51,7 @@ namespace Starting
                     int i = 0;
                     Console.WriteLine("How many doors do you have?");
                     int doorsize = int.Parse(Console.ReadLine());
-                    //loop to make sure all windows are calculated
+                    //loop to make sure all doors are calculated
                     while (i != doorsize)
                     {
                         Console.WriteLine("please enter the width of the door in foot");
