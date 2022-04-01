@@ -12,9 +12,9 @@ namespace Starting
             {
                 //calculation of wall area
                 Console.WriteLine("please enter the width of the wall in foot");
-                double width = int.Parse(Console.ReadLine());
+                double width = double.Parse(Console.ReadLine());
                 Console.WriteLine("please enter the height of the wall foot");
-                double height = int.Parse(Console.ReadLine());
+                double height = double.Parse(Console.ReadLine());
                 double total = height * width;
                 Console.WriteLine("The total area of the wall is " + total + "ft^2");
                 Console.WriteLine("1 litre of pain covers approx 20ft^2");
@@ -73,7 +73,6 @@ namespace Starting
                 //shows amount of paint needed accordingly
                 Console.WriteLine("You will need " + paintNeeded + " of the small size or " + (paintNeeded / 5) + " of medium size or " + (paintNeeded / 10) + " of large size can");
                 Console.WriteLine("The cost for a small size will range from £8-£20, medium will range from £10-25 and a large will cost £15-30.");
-                Console.ReadLine();
                 Console.WriteLine("What size paint would you like? small for 1 litre, medium for 5 litre or large for 10 litre");
                 string size = Console.ReadLine();
 
