@@ -20,8 +20,7 @@ namespace Starting
                 Console.WriteLine("1 litre of pain covers approx 20ft^2");
                 Console.ReadLine();
 
-                //calculations for having windows + doors                
-                string doors;
+                //calculations for having windows 
                 Console.WriteLine("Do you have windows on the wall?");
                 string windows = Console.ReadLine();
                 if (windows == "yes")
@@ -30,14 +29,36 @@ namespace Starting
                     Console.WriteLine("How many windows do you have?");
                     int windowsize = int.Parse(Console.ReadLine());
                     //loop to make sure all windows are calculated
-                    while (i <= windowsize)
+                    while (i == windowsize)
                     {
                         Console.WriteLine("please enter the width of the wall in foot");
                         double widthWindow = int.Parse(Console.ReadLine());
                         Console.WriteLine("please enter the height of the wall foot");
                         double heightWindow = int.Parse(Console.ReadLine());
                         double totalWindow = heightWindow * widthWindow;
-                        Console.WriteLine("The total area of the wall is " + totalWindow + "ft^2");
+                        Console.WriteLine("The total area of the window is " + totalWindow + "ft^2");
+                        total = total - totalWindow;
+                        ++i;
+                    }
+                }
+
+                //calculations for having doors
+                Console.WriteLine("Do you have doors on the wall?");
+                string doors = Console.ReadLine();
+                if (doors == "yes")
+                {
+                    int i = 0;
+                    Console.WriteLine("How many doors do you have?");
+                    int doorsize = int.Parse(Console.ReadLine());
+                    //loop to make sure all windows are calculated
+                    while (i == doorsize)
+                    {
+                        Console.WriteLine("please enter the width of the door in foot");
+                        double widthDoor = int.Parse(Console.ReadLine());
+                        Console.WriteLine("please enter the height of the door foot");
+                        double heightDoor = int.Parse(Console.ReadLine());
+                        double totalDoor = heightDoor * widthDoor;
+                        Console.WriteLine("The total area of the ddor is " + totalDoor + "ft^2");
                         ++i;
                     }
                 }
@@ -132,8 +153,7 @@ namespace Starting
                     repeat = false;
                 }                    
             }
-            
-
+                        
         }
     }
 }
