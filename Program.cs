@@ -41,7 +41,6 @@ namespace Starting
                         ++i;
                     }
                 }
-
                 //calculations for having doors
                 Console.WriteLine("Do you have doors on the wall?");
                 string doors = Console.ReadLine();
