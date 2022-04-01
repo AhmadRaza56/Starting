@@ -40,7 +40,9 @@ namespace Starting
                         total = total - totalWindow;
                         ++i;
                     }
+                    Console.WriteLine("The new total area of the wall is "+ total + "ft^2");
                 }
+
                 //calculations for having doors
                 Console.WriteLine("Do you have doors on the wall?");
                 string doors = Console.ReadLine();
@@ -57,9 +59,11 @@ namespace Starting
                         Console.WriteLine("please enter the height of the door foot");
                         double heightDoor = int.Parse(Console.ReadLine());
                         double totalDoor = heightDoor * widthDoor;
-                        Console.WriteLine("The total area of the ddor is " + totalDoor + "ft^2");
+                        Console.WriteLine("The total area of the door is " + totalDoor + "ft^2");
+                        total = total - totalDoor;
                         ++i;
                     }
+                    Console.WriteLine("The new total area of the wall is " + total + "ft^2");
                 }
 
                 //calculate the amount of paint needed in total
